@@ -1,108 +1,89 @@
-## Create-React-App-Lambda
+# 🤘 Light Blue React Template
 
-This project is a reference demo showing you how to use [Create React App v3](https://github.com/facebookincubator/create-react-app) and [netlify-lambda v1](https://github.com/netlify/netlify-lambda) together in a [Netlify Dev](https://www.netlify.com/docs/cli/?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex#netlify-dev-beta) workflow. You can clone this and immediately be productive with a React app with serverless Netlify Functions in the same repo. Alternatively you can deploy straight to Netlify with this one-click Deploy:
+Free and open-source admin dashboard template built with React and Bootstrap 4. Developed with ❤️ by [Flatlogic](https://flatlogic.com/). If you love our project please star ⭐️ our repo!
+
+**Development at risk! Our developer wants to eat and accepted a job offer from McDonalds! Buy a [full version of Light Blue React](https://flatlogic.com/templates/light-blue-react) to help us hire him again!** *
+
+[View Demo](https://flatlogic.github.io/light-blue-react-template/) | [Download](https://github.com/flatlogic/light-blue-react-template.git) | [More templates](https://flatlogic.com/templates)
+
+[![image](https://user-images.githubusercontent.com/43149862/78150582-270b4380-7440-11ea-826a-64e99b77d06d.png)](https://flatlogic.github.io/light-blue-react-template/)
+
+This dashboard is a lite version (containing only few components) of our [Light Blue React](https://flatlogic.com/templates/light-blue-react). There are all ready-to-use components, that are in full version. It is built on the top of React 16, so it well supported along the web. You can easy customize template by changing SCSS variables. All paddings and colors are in _variables.scss file.
+
+## Features
+
+Light Blue React Template is a great template to quick-start development of SAAS, CMS, IoT Dashboard, E-Commerce apps, etc  
+Lite version of a Light Blue includes following features and pages:
+
+* Bootstrap 4+ & SCSS
+* Responsive layout
+* React Chart.js
+* Simple login / logout 
+* Error page
+* Styled Bootstrap components like buttons, modals, etc
 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/create-react-app-lambda&utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex)
+## Pages
+We have implemented some basic pages, so you can see our template in action.
 
-> ⚠️NOTE: You may not need this project at all. [Netlify Dev](https://github.com/netlify/netlify-dev-plugin) works with `create-react-app` out of the box! Only use `netlify-lambda` if you need a build step for your functions, eg if you want to use Babel or TypeScript ([see its README for details](https://github.com/netlify/netlify-lambda/blob/master/README.md#netlify-lambda)).
+* Dashboard sample
+* Typography
+* Tables
+* Notifications
+* Charts
+* Icons
+* Maps
+* Chat
+* Login
+* Error page
 
-## Project Setup
+## Instalation 
 
-**Source**: The main addition to base Create-React-App is a new folder: `src/lambda`. This folder is specified and can be changed in the `package.json` script: `"build:lambda": "netlify-lambda build src/lambda"`.
-
-**Dist**: Each JavaScript file in there will be built for Netlify Function deployment in `/built-lambda`, specified in [`netlify.toml`](https://www.netlify.com/docs/netlify-toml-reference/?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex).
-
-As an example, we've included a small `src/lambda/hello.js` function, which will be deployed to `/.netlify/functions/hello`. We've also included an async lambda example using async/await syntax in `async-dadjoke.js`.
-
-## Video
-
-Learn how to set this up yourself (and why everything is the way it is) from scratch in a video: https://www.youtube.com/watch?v=3ldSM98nCHI
-
-## Babel/webpack compilation
-
-All functions (inside `src/lambda`) are compiled with webpack using Babel, so you can use modern JavaScript, import npm modules, etc., without any extra setup.
-
-## Local Development
-
-```bash
-## prep steps for first time users
-npm i -g netlify-cli # Make sure you have the [Netlify CLI](https://github.com/netlify/cli) installed
-git clone https://github.com/netlify/create-react-app-lambda ## clone this repo
-cd create-react-app-lambda ## change into this repo
-yarn # install all dependencies
-
-## done every time you start up this project
-ntl dev ## nice shortcut for `netlify dev`, starts up create-react-app AND a local Node.js server for your Netlify functions
+1. Clone repository
+```shell
+git clone https://github.com/flatlogic/light-blue-react-template.git
+```
+2. Get in the project folder
+```shell
+cd light-blue-react-template
+```
+3. Install dependencies via npm or yarn
+```shell
+npm install
+```
+```shell
+yarn
 ```
 
-This fires up [Netlify Dev](https://www.netlify.com/docs/cli/?utm_source=github&utm_medium=swyx-CRAL&utm_campaign=devex#netlify-dev-beta), which:
-
-- Detects that you are running a `create-react-app` project and runs the npm script that contains `react-scripts start`, which in this project is the `start` script
-- Detects that you use `netlify-lambda` as a [function builder](https://github.com/netlify/netlify-dev-plugin/#function-builders-function-builder-detection-and-relationship-with-netlify-lambda), and runs the npm script that contains `netlify-lambda build`, which in this project is the `build:lambda` script.
-
-You can view the project locally via Netlify Dev, via `localhost:8888`.
-
-Each function will be available at the same port as well:
-
-- `http://localhost:8888/.netlify/functions/hello` and 
-- `http://localhost:8888/.netlify/functions/async-dadjoke`
-
-## Deployment
-
-During deployment, this project is configured, inside `netlify.toml` to run the build `command`: `yarn build`.
-
-`yarn build` corresponds to the npm script `build`, which uses `npm-run-all` (aka `run-p`) to concurrently run `"build:app"` (aka `react-scripts build`) and `build:lambda` (aka `netlify-lambda build src/lambda`).
-
-## Typescript
-
-<details>
-  <summary>
-    <b id="typescript">Click for instructions</b>
-  </summary>
-
-You can use Typescript in both your frontend React code (with `react-scripts` v2.1+) and your serverless functions (with `netlify-lambda` v1.1+). Follow these instructions:
-
-1. `yarn add -D typescript @types/node @types/react @types/react-dom @babel/preset-typescript @types/aws-lambda`
-2. convert `src/lambda/hello.js` to `src/lambda/hello.ts`
-3. use types in your event handler:
-
-```ts
-import { Handler, Context, Callback, APIGatewayEvent } from 'aws-lambda'
-
-interface HelloResponse {
-  statusCode: number
-  body: string
-}
-
-const handler: Handler = (event: APIGatewayEvent, context: Context, callback: Callback) => {
-  const params = event.queryStringParameters
-  const response: HelloResponse = {
-    statusCode: 200,
-    body: JSON.stringify({
-      msg: `Hello world ${Math.floor(Math.random() * 10)}`,
-      params,
-    }),
-  }
-
-  callback(undefined, response)
-}
-
-export { handler }
+## Quick start
+Run development server
+```shell
+yarn run
 ```
 
-rerun and see it work!
+## Support
+For any additional information please refer to [Flatlogic homepage](https://flatlogic.com).
 
-You are free to set up your `tsconfig.json` and `tslint` as you see fit.
+## How can I support developers?
+- Star our GitHub repo :star:
+- [Tweet about it](https://twitter.com/intent/tweet?text=Amazing%20dashboard%20built%20with%20%23VueJS%20and%20%23Bootstrap!&url=https://github.com/flatlogic/light-blue-vue-admin&via=flatlogic).
+- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
+- Follow [@flatlogic on Twitter](https://twitter.com/flatlogic).
+- Subscribe to Flatlogic newsletter at [flatlogic.com](https://flatlogic.com/)
+- Like our page on [Facebook](https://www.facebook.com/flatlogic/) :thumbsup:
 
-</details>
+## More from Flatlogic
+- [Awesome Bootstrap Checkboxes & Radios](https://github.com/flatlogic/awesome-bootstrap-checkbox) - ✅ Pure css way to make inputs look prettier
+- [React Native Starter](https://github.com/flatlogic/react-native-starter) - 🚀 A powerful react native starter template that bootstraps development of your mobile application
+- [React Dashboard](https://github.com/flatlogic/react-dashboard) - 🔥 React Dashboard - isomorphic admin dashboard template with GraphQL
+- [Sing App](https://github.com/flatlogic/sing-app) - 💥 Free and open-source admin dashboard template built with Bootstrap 4
+- [Light Blue Dashboard](https://github.com/flatlogic/light-blue-dashboard) - 💦 Free and open-source (no frameworks) admin dashboard template built with Bootstrap
 
-**If you want to try working in Typescript on the client and lambda side**: There are a bunch of small setup details to get right. Check https://github.com/sw-yx/create-react-app-lambda-typescript for a working starter.
+## Premium themes
+Looking for premium themes and templates? Check out our other template at [flatlogic.com](https://flatlogic.com/admin-dashboards).
 
-## Routing and authentication with Netlify Identity
+## License
 
-For a full demo of routing and authentication, check this branch: https://github.com/netlify/create-react-app-lambda/pull/18 This example will not be maintained but may be helpful.
+Light Blue React Template version is [MIT](https://github.com/flatlogic/light-blue-react-template/blob/master/LICENCE)-licensed.
 
-## Service Worker
-
-`create-react-app`'s default service worker (in `src/index.js`) does not work with lambda functions out of the box. It prevents calling the function and returns the app itself instead ([Read more](https://github.com/facebook/create-react-app/issues/2237#issuecomment-302693219)). To solve this you have to eject and enhance the service worker configuration in the webpack config. Whitelist the path of your lambda function and you are good to go.
+* that's a joke actually, but we would really appreciate if you support us by buying a premium version. Anyways free is just free and is limited to only few components, while premium one has more and comes with premium support.
