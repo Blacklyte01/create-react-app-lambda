@@ -1,89 +1,61 @@
-# 🤘 Light Blue React Template
+<p align="center">
+    <a href="https://bloomui.com" title="BloomUI.com">
+        <img src="https://bloomui.s3.us-east-2.amazonaws.com/tokyo-logo.png" alt="Tokyo Free White Typescript React Admin Dashboard">
+    </a>
+</p>
+<h1 align="center">
+    <b>Tokyo Free White Typescript React Admin Dashboard</b>
+    <br>
+    <a href="https://twitter.com/intent/tweet?url=https://bloomui.com&text=I like this React admin dashboard">
+        <img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" />
+    </a>
+</h1>
+<div align="center">
 
-Free and open-source admin dashboard template built with React and Bootstrap 4. Developed with ❤️ by [Flatlogic](https://flatlogic.com/). If you love our project please star ⭐️ our repo!
+![version](https://img.shields.io/badge/version-2.0.0-blue.svg)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-**Development at risk! Our developer wants to eat and accepted a job offer from McDonalds! Buy a [full version of Light Blue React](https://flatlogic.com/templates/light-blue-react) to help us hire him again!** *
+<a href="https://bloomui.com/product/tokyo-free-white-react-typescript-material-ui-admin-dashboard/"><img src="https://bloomui.s3.us-east-2.amazonaws.com/tokyo-free-white-react-typescript-material-ui-admin-dashboard.jpg" /></a>
+</div>
 
-[View Demo](https://flatlogic.github.io/light-blue-react-template/) | [Download](https://github.com/flatlogic/light-blue-react-template.git) | [More templates](https://flatlogic.com/templates)
+<a href="https://bloomui.com/product/tokyo-free-white-react-typescript-material-ui-admin-dashboard/"><h3>Free React Typescript Admin Dashboard Template built with Material-UI</h3></a>
+<p>
+    This free and open source admin dashboard template is built for React and it’s bootstrapped from Facebook’s create-react-app. All NPM dependencies are up to date and it contains multiple fully customized components based on the popular frontend components framework, Material-UI.
+</p>
+<p>
+Tokyo Free White Typescript Dashboard features a nice classic light & clean design and color scheme.
+</p>
+<p>
+You can customize the color scheme and style by editing a single variables files. This Typescript admin dashboard doesn’t use SCSS stylesheets but the more modern approach with styled-components.
+</p>
+<p>
+We’ve included a few page examples for most used user flows that will give you a solid base for getting started with your new project’s development. With very light modifications you can even integrate Tokyo Free White Typescript Dashboard into existing projects giving them a much deserved makeover.
+</p>
 
-[![image](https://user-images.githubusercontent.com/43149862/78150582-270b4380-7440-11ea-826a-64e99b77d06d.png)](https://flatlogic.github.io/light-blue-react-template/)
+---
+<h3>Updrade to PRO</h3>
 
-This dashboard is a lite version (containing only few components) of our [Light Blue React](https://flatlogic.com/templates/light-blue-react). There are all ready-to-use components, that are in full version. It is built on the top of React 16, so it well supported along the web. You can easy customize template by changing SCSS variables. All paddings and colors are in _variables.scss file.
+<p>If you're looking for more features like translations, complex user flows, redux examples and more,  we recommend taking a look at the premium version (Tokyo White Typescript Dashboard) on <a href="https://bloomui.com">bloomui.com</a></p>
 
-## Features
+---
 
-Light Blue React Template is a great template to quick-start development of SAAS, CMS, IoT Dashboard, E-Commerce apps, etc  
-Lite version of a Light Blue includes following features and pages:
+<h2>
+    Quick Start
+</h2>
+<ol>
+    <li>Make sure you have the latest stable versions for Node.js and NPM installed</li>
+    <li>Clone repository: <code>git clone https://github.com/bloomui/tokyo-free-white-react-admin-dashboard.git</code></li>
+    <li>Install dependencies: Run <code>npm install</code> inside the project folder</li>
+    <li>Start dev server: After the install finishes, run <code>npm run start</code>. A browser window will open on http://localhost:3000 where you''ll see the live preview</li>
+</ol>
 
-* Bootstrap 4+ & SCSS
-* Responsive layout
-* React Chart.js
-* Simple login / logout 
-* Error page
-* Styled Bootstrap components like buttons, modals, etc
+---
 
-
-## Pages
-We have implemented some basic pages, so you can see our template in action.
-
-* Dashboard sample
-* Typography
-* Tables
-* Notifications
-* Charts
-* Icons
-* Maps
-* Chat
-* Login
-* Error page
-
-## Instalation 
-
-1. Clone repository
-```shell
-git clone https://github.com/flatlogic/light-blue-react-template.git
-```
-2. Get in the project folder
-```shell
-cd light-blue-react-template
-```
-3. Install dependencies via npm or yarn
-```shell
-npm install
-```
-```shell
-yarn
-```
-
-## Quick start
-Run development server
-```shell
-yarn run
-```
-
-## Support
-For any additional information please refer to [Flatlogic homepage](https://flatlogic.com).
-
-## How can I support developers?
-- Star our GitHub repo :star:
-- [Tweet about it](https://twitter.com/intent/tweet?text=Amazing%20dashboard%20built%20with%20%23VueJS%20and%20%23Bootstrap!&url=https://github.com/flatlogic/light-blue-vue-admin&via=flatlogic).
-- Create pull requests, submit bugs, suggest new features or documentation updates :wrench:
-- Follow [@flatlogic on Twitter](https://twitter.com/flatlogic).
-- Subscribe to Flatlogic newsletter at [flatlogic.com](https://flatlogic.com/)
-- Like our page on [Facebook](https://www.facebook.com/flatlogic/) :thumbsup:
-
-## More from Flatlogic
-- [Awesome Bootstrap Checkboxes & Radios](https://github.com/flatlogic/awesome-bootstrap-checkbox) - ✅ Pure css way to make inputs look prettier
-- [React Native Starter](https://github.com/flatlogic/react-native-starter) - 🚀 A powerful react native starter template that bootstraps development of your mobile application
-- [React Dashboard](https://github.com/flatlogic/react-dashboard) - 🔥 React Dashboard - isomorphic admin dashboard template with GraphQL
-- [Sing App](https://github.com/flatlogic/sing-app) - 💥 Free and open-source admin dashboard template built with Bootstrap 4
-- [Light Blue Dashboard](https://github.com/flatlogic/light-blue-dashboard) - 💦 Free and open-source (no frameworks) admin dashboard template built with Bootstrap
-
-## Premium themes
-Looking for premium themes and templates? Check out our other template at [flatlogic.com](https://flatlogic.com/admin-dashboards).
-
-## License
-
-Light Blue React Template version is [MIT](https://github.com/flatlogic/light-blue-react-template/blob/master/LICENCE)-licensed.
-
-* that's a joke actually, but we would really appreciate if you support us by buying a premium version. Anyways free is just free and is limited to only few components, while premium one has more and comes with premium support.
+<h2>
+    Technical Support
+</h2>
+<p>
+    You can open a support ticket by sending an email here: <a href="mailto:support@bloomui.freshdesk.com" title="Open Support Ticket">
+        support@bloomui.freshdesk.com
+    </a>
+</p>
